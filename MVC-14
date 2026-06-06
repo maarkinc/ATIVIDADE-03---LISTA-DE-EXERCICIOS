@@ -1,0 +1,37 @@
+//MVC-14
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+int main() {
+	setlocale(LC_ALL, "portuguese");
+	
+printf("\n**************************************************************");
+printf("\n*       ALUNO - MARCUS VINICIUS COSTA - RA: 0028073          *");
+printf("\n* PROGRAMA MVC-14 - Tipo de Triangulo                        *");
+printf("\n**************************************************************");
+
+
+    int L1,L2,L3;
+    printf("\n DIGITE LADO 1: ");
+    scanf("%d",&L1);
+
+    printf("\n DIGITE LADO 2: ");
+    scanf("%d",&L2);
+
+    printf("\n DIGITE LADO 3: ");
+    scanf("%d",&L3);
+    
+    
+    if(L1==L2 && L2==L3){
+        printf("Triangulo Equilatero");
+}
+    else if(L1==L2 || L2==L3 || L1==L3){
+        printf("Triangulo Isosceles");
+}
+    else{
+        printf("Triangulo Escaleno");
+}
+    return 0;
+}
